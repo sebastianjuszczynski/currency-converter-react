@@ -9,7 +9,6 @@ import Container from "./Container";
 function App() {
   return (
     <Container>
-      <h1 className="header">Kalkulator walut 💸</h1>
       <Form />
       <Result />
     </Container>
