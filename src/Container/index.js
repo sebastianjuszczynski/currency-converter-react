@@ -4,7 +4,7 @@ import "./style.css";
 
 const Container = ({ children }) => (
   <main className="container">
-    <h1 class="header">Kalkulator walut 💸</h1>
+    <h1 className="header">Kalkulator walut 💸</h1>
     {children}
   </main>
 );
