@@ -1,6 +1,6 @@
 # Currency converter in React.js!
 
-[link]
+[link] (https://sebastianjuszczynski.github.io/currenct-converter-react/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
