@@ -16,7 +16,7 @@ export const Form = ({ calculateResult }) => {
         <fieldset className="form__fieldset">
           <legend className="form__legend">Uzupełnij dane:</legend>
           <p>
-            <label for="amount" className="form__label">Podaj kwotę w złotówkach*:</label>
+            <label htmlFor="amount" className="form__label">Podaj kwotę w złotówkach*:</label>
             <input
             value={amount}
             onChange={({target}) => setAmount(target.value)}
@@ -27,7 +27,7 @@ export const Form = ({ calculateResult }) => {
             />
           </p>
           <p>
-            <label for="currency" className="form__label">Waluta:</label>
+            <label htmlFor="currency" className="form__label">Waluta:</label>
             <select
             className="form__input"
             value={currency}
