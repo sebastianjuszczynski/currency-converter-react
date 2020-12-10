@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { currencies } from "../currencies.js";
 import "./style.css";
 
-export const Form = ({ calculateResult, result}) => {
+export const Form = ({ calculateResult }) => {
   const [currency, setCurrency] = useState(currencies[0].short);
   const [amount, setAmount] = useState("");
 
