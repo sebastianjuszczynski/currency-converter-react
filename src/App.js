@@ -7,6 +7,7 @@ import { Form } from "./Form";
 
 
 
+
 function App() {
 
   const [result, setResult] = useState();
@@ -24,7 +25,9 @@ function App() {
 
   return (
     <Container>
+      
       <Form calculateResult={calculateResult} />
+      
       <Result result={result} />
     </Container>
   );
