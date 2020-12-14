@@ -10,17 +10,17 @@ import { Form } from "./Form";
 
 function App() {
 
-  const [result, setResult] = useState();
+  const [result, setResult] = useState("ble ble");
 
   const calculateResult = (currency, amount) => {
     const rate = currencies
       .find(({ short }) => short === currency).rate;
 
-    setResult({
+    setResult((result) => ({
       sourceAmount: +amount,
       targetAmount: amount / rate,
       currency
-    });
+    }));
   }
 
   return (
