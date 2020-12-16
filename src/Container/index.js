@@ -1,12 +1,11 @@
 import React from "react";
-import "./style.css";
-
+import { ContainerBox, Header } from "./styled";
 
 const Container = ({ children }) => (
-  <main className="container">
-    <h1 className="header">Kalkulator walut 💸</h1>
+  <ContainerBox>
+    <Header>Kalkulator walut 💸</Header>
     {children}
-  </main>
+  </ContainerBox>
 );
 
 export default Container;

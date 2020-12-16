@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./style.css";
+import { ClockBox } from "./styled";
 
 export const Clock = () => {
     const [date, setDate] = useState(new Date());
@@ -15,7 +15,7 @@ export const Clock = () => {
     }, []);
 
     return (
-        <div className="clock">
+        <ClockBox>
             Dzisiaj jest
             {" "}
             {date.toLocaleString("pl", {
@@ -26,6 +26,6 @@ export const Clock = () => {
                 day: "numeric",
                 month: "long"
             })}
-        </div>
+        </ClockBox>
     )
 }
