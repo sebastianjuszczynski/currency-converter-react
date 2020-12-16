@@ -8,6 +8,11 @@ export const Result = ({ result }) => (
         Narodowego Banku Polskiego obowiązujące od dnia 2020-11-27</p>
 
     <p className="result__paragraph">
+      {result === undefined && (
+        <>
+        Wpisz kwotę w PLN-ach a następnie kliknij w przycisk "PRZELICZ"
+        </>
+      )}
       {result !== undefined && (
         <>
           {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=&nbsp;

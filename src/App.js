@@ -16,7 +16,8 @@ function App() {
     const rate = currencies
       .find(({ short }) => short === currency).rate;
 
-    setResult({
+    setResult(      
+      {
       sourceAmount: +amount,
       targetAmount: amount / rate,
       currency
