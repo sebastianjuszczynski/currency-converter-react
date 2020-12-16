@@ -1,11 +1,12 @@
-.result__info {
+import styled from "styled-components";
+
+export const Info = styled.p`
     color: white;
     text-align: center;
     margin-top: 1px;
     margin-bottom: 50px;
-}
-
-.result__paragraph {
+`;
+export const ResultParagraph = styled.p`
     background-color: hsl(66, 100%, 65%);
     border: 8px solid black;
     border-radius: 5px;
@@ -15,4 +16,4 @@
     width: 70%;
     margin: 0 auto;
     padding: 40px;
-}
+`;

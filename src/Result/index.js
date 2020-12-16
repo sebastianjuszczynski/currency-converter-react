@@ -1,27 +1,27 @@
 
 import React from "react";
-import "./style.css";
+import { Info, ResultParagraph } from "./styled";
 
 export const Result = ({ result }) => (
   <>
-    <p className="result__info">Kursy walut - Tabela A kursów średnich walut obcych na podstawie notowań
-        Narodowego Banku Polskiego obowiązujące od dnia 2020-11-27</p>
+    <Info>Kursy walut - Tabela A kursów średnich walut obcych na podstawie notowań
+        Narodowego Banku Polskiego obowiązujące od dnia 2020-11-27</Info>
 
-    <p className="result__paragraph">
+    <ResultParagraph>
       {result === undefined && (
         <>
-        Wpisz kwotę w PLN-ach a następnie kliknij w przycisk "PRZELICZ"
+          Wpisz kwotę w PLN-ach a następnie kliknij w przycisk "PRZELICZ"
         </>
       )}
       {result !== undefined && (
         <>
           {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=&nbsp;
           <strong>
-              {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+            {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
           </strong>
-          </>
+        </>
       )}
-    </p>
+    </ResultParagraph>
   </>
 );
 
