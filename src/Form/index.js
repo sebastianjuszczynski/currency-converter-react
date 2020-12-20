@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Clock } from "../Clock";
-import { FormBox, FormFieldset, Legend, FormLabel, FormInput, FormButton, Text } from "./styled";
+import { FormBox, FormFieldset, Legend, FormLabel, FormInput, FormButton } from "./styled";
 
 export const Form = ({ calculateResult, ratesData }) => {
   const [amount, setAmount] = useState("");
@@ -19,7 +19,7 @@ export const Form = ({ calculateResult, ratesData }) => {
       <Clock />
       <FormFieldset>
         <Legend>Uzupełnij dane:</Legend>
-        {ratesData ? (<>
+        <>
         <p>
           <FormLabel htmlFor="amount" className="form__label">Podaj kwotę w *:</FormLabel>
           <FormInput
@@ -43,16 +43,7 @@ export const Form = ({ calculateResult, ratesData }) => {
         <p>
           <FormButton>Przelicz na PLN-y!!!</FormButton>
         </p>
-        </>) : (
-          <Text>
-          {ratesData === "error"
-              ? `Wystąpił błąd. Sprawdź połączenie internetowe,
-              a jeśli to nie pomoże - spróbuj ponownie później.`
-              :
-              `Trwa pobieranie danych z Europejskiego Banku Centralnego.`
-          }
-      </Text>
-        )}
+        </>
       </FormFieldset>
     </FormBox>
   )

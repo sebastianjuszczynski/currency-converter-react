@@ -52,11 +52,6 @@ export const FormButton = styled.button`
         color: hsl(120, 93%, 45%);
     }
 `;
-export const Text = styled.div`
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-`;
 
 
 
