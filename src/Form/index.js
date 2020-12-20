@@ -25,7 +25,6 @@ export const Form = ({ calculateResult, ratesData }) => {
           <FormInput
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
-            className="form__input"
             type="number" id="amount"
             name="amount"
             required
