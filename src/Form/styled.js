@@ -56,6 +56,20 @@ export const Text = styled.div`
     margin: auto;
     padding: 20px;
     text-align: center;
+    color: hsl(120, 93%, 40%);
+`;
+export const Error = styled.div`
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: crimson;
+`;
+export const Info = styled.div`
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    color: hsl(120, 93%, 40%);
+    font-size: 16px;
 `;
 
 
