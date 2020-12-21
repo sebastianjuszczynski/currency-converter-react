@@ -11,8 +11,8 @@ export const useRatesData = () => {
                 date: response.data.date,
                 currencies: response.data.rates,
             }))
-            .catch(() => console.error("Check Your network connection!!!"));
-    }, [])
+            .catch(() => setRatesData("error"))
+    }, [ratesData])
 
     return ratesData;
 }

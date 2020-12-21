@@ -15,9 +15,10 @@ function App() {
 
   const calculateResult = (amount, sourceCurrency) => {
     const plnRates = ratesData.currencies;
-    const resultValue = amount / plnRates[sourceCurrency];
+    const resultValue = amount * plnRates[sourceCurrency];
     setResult({
         value: resultValue,
+        sourceCurrency
     });
 };
 
