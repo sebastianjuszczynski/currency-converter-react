@@ -58,6 +58,10 @@ export const Text = styled.div`
     padding: 20px;
     text-align: center;
     color: hsl(120, 93%, 40%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
 `;
 export const Error = styled.div`
     margin: auto;
