@@ -13,14 +13,14 @@ function App() {
   const [result, setResult] = useState("");
   const ratesData = useRatesData();
 
-  const calculateResult = (amount, sourceCurrency) => {
-    const plnRates = ratesData.currencies;
-    const resultValue = amount * plnRates[sourceCurrency];
-    setResult({
-        value: resultValue,
-        sourceCurrency
-    });
-};
+  const calculateResult = (currency, amount) => {
+     const rate = ratesData.rates[currency];
+     setResult({
+         sourceAmount: +amount,
+         targetAmount: amount * rate,
+         currency,
+     })
+  };
 
   return (
     <Container>
