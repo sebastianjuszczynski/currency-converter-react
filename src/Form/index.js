@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Clock } from "../Clock";
 import { FormBox, FormFieldset, Legend, FormLabel, FormInput, FormButton, Text, Error, Info } from "./styled";
+import { WindMillLoading } from 'react-loadingg';
 
 export const Form = ({ calculateResult, ratesData }) => {
   const [amount, setAmount] = useState("");
@@ -20,6 +21,11 @@ export const Form = ({ calculateResult, ratesData }) => {
         <Legend>Uzupełnij dane:</Legend>
         {ratesData.state === "loading"
           ? (<Text>
+            <WindMillLoading 
+            color={"#08DD08"} 
+            size={"large"}
+            speed={1}
+            />
             Poczekaj chwilkę... Ładuję dane z Banku...
           </Text>
           )
