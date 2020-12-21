@@ -8,6 +8,6 @@ export const ResultBox = styled.p`
     text-align: center;
     font-size: 40px;
     width: 70%;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 40px;
 `;

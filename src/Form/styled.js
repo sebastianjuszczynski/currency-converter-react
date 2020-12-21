@@ -39,6 +39,7 @@ export const FormInput = styled.input`
 `;
 export const FormButton = styled.button`
     width: 100%;
+    margin: 5px auto;
     padding: 8px;
     text-transform: uppercase;
     border: 4px solid hsl(120, 93%, 40%);
