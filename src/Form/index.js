@@ -8,7 +8,6 @@ export const Form = ({ calculateResult, ratesData }) => {
   const [currency, setCurrency] = useState("GBP");
 
 
-
   const onFormSubmit = (event) => {
     event.preventDefault();
     calculateResult(currency, amount);
@@ -51,7 +50,7 @@ export const Form = ({ calculateResult, ratesData }) => {
                     />
                   </p>
                   <p>
-                    <FormLabel htmlFor="currency" className="form__label">Wybierz walutę:</FormLabel>
+                    <FormLabel htmlFor="currency">Wybierz walutę:</FormLabel>
                     <FormInput as="select"
                       value={currency}
                       onChange={({ target }) => setCurrency(target.value)}
@@ -75,7 +74,7 @@ export const Form = ({ calculateResult, ratesData }) => {
                   </Info>
                 </>))}
 
-
+                
       </FormFieldset>
     </FormBox>
   )

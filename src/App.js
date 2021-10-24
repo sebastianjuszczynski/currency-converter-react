@@ -4,10 +4,6 @@ import Container from "./Container";
 import { useRatesData } from "./useRatesData";
 import { Form } from "./Form";
 
-
-
-
-
 function App() {
 
   const [result, setResult] = useState("");
