@@ -9,7 +9,7 @@ export const useRatesData = () => {
     useEffect(() => {
         const fetchRates = async () => {
             try {
-                const response = await fetch(`http://api.exchangeratesapi.io/latest?access_key=${apiKey}&base=PLN`)
+                const response = await fetch(`http://api.exchangeratesapi.io/latest?access_key=${apiKey}`)
                 
                 if (!response.ok) {
                     throw new Error(response.statusText);
@@ -28,7 +28,7 @@ export const useRatesData = () => {
                 });
             }
         };
-        setTimeout(fetchRates, 10);
+        setTimeout(fetchRates, 2000);
     }, []);
 
     return ratesData;

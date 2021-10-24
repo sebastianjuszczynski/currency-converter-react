@@ -40,7 +40,7 @@ export const Form = ({ calculateResult, ratesData }) => {
             ) : (
                 <>
                   <p>
-                    <FormLabel htmlFor="amount" className="form__label">Podaj kwotę w złotówkach*:</FormLabel>
+                    <FormLabel htmlFor="amount" className="form__label">Podaj kwotę w Euro*:</FormLabel>
                     <FormInput
                       value={amount}
                       onChange={({ target }) => setAmount(target.value)}
